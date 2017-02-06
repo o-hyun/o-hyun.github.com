@@ -17,6 +17,9 @@ description: This is my repository to store my articles, codes
 favicon: favicon.png # Image must be in assets/images
 repository: o-hyun/o-hyun.github.com # ex. DONGChuan/DONGChuan.github.io
 site_url: http://o-hyun.github.io
+google_map_key: AIzaSyC7qXAnmg1fRE0OkauQBWCfkXW8vkKm-Vs
+location_lat: 35.96928
+location_lng: 129.40183
 
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000

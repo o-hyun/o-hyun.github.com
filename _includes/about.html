@@ -61,7 +61,31 @@
 
 		<h2>Location</h2>
 		<div class="panel page-default">
-			<iframe width="100%" height="100%" frameborder="0" style="border:0" src="/location.html" allowfullscreen> </iframe>
+			<div class="panel panel-body">
+			<div id="map" style="border-radius: 10px; width: 100%; height: 350px;"></div>
+			<script type="text/javascript">
+			function initMap() {
+				// Create a map object and specify the DOM element for display.
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: {{ site.location_lat }}, lng: {{ site.location_lng }} },
+					scrollwheel: false,
+					zoom: 10
+				});
+				var infoWindow = new google.maps.InfoWindow();
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng({{ site.location_lat }}, {{ site.location_lng }}),
+					map: map
+				});
+				google.maps.event.addListener(marker, 'click', (function (marker, i) {
+					return function () {
+						infoWindow.setContent('우리 집');
+						infoWindow.open(map, marker);
+					}
+				})(marker, 0));
+			}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key={{ site.google_map_key }}&callback=initMap" async defer></script>
+			</div>
 		</div>
 
     </div>
