@@ -1,0 +1,8 @@
+- j2ee: 'Spring'
+  proficiency: 'success'
+- j2ee: 'JPA'
+  proficiency: 'success'
+- j2ee: 'Hibernet'
+  proficiency: 'success'
+- j2ee: 'MyBatis'
+  proficiency: 'success'

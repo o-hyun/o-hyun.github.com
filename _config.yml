@@ -1,1 +1,86 @@
-theme: jekyll-theme-cayman
+
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: My Private Programming Square, # ex. I m Chuan
+name: Kwon, Oh-Hyun # ex. DONGChuan
+email: ohyun.kwon@gmail.com
+location: Pohang, Souch Korea # ex. Nice, France
+company: None
+company_url: None
+github_url: https://github.com/o-hyun # ex. https://github.com/DONGChuan
+description: This is my repository to store my articles, codes
+favicon: favicon.png # Image must be in assets/images
+repository: o-hyun/o-hyun.github.com # ex. DONGChuan/DONGChuan.github.io
+site_url: http://o-hyun.github.io
+
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: http://localhost:4000
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Disque
+disque: ohyun-github-page.disqus.com # ex. httpdongchuangithubio.disqus.com
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: /blog
+    label: Blog
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-91458197-1'  # ex. UA-72165600-X
