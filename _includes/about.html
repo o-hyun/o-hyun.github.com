@@ -69,6 +69,8 @@
 				var map = new google.maps.Map(document.getElementById('map'), {
 					center: {lat: {{ site.location_lat }}, lng: {{ site.location_lng }} },
 					scrollwheel: false,
+					draggable: false,
+					scaleControl: false,
 					zoom: 10
 				});
 				var infoWindow = new google.maps.InfoWindow();
