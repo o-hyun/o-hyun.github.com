@@ -13,3 +13,6 @@ menu: Bookmark
 
 ## Java EE
 - [Java Platform, Enterprise Edition: The Java EE Tutorial](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm) - JavaEE7 Persistence Tutorial 
+
+## ORM(JPA, Hibernate, etc)
+- [VLAD MIHALCEA'S BLOG](https://vladmihalcea.com) - Hibernate에 대해 괜찮은 포스트가 많은 블로그
